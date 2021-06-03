@@ -1,0 +1,270 @@
+﻿<Page
+    x:Class="project_husky.currency_convertor"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:project_husky"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="White">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="166,33,0,0" Text="Currency Convertor" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="48" FontWeight="Bold"/>
+        <Rectangle HorizontalAlignment="Left" Height="1100" Stroke="Black" Fill="Black"  VerticalAlignment="Center" Width="124" RenderTransformOrigin="0.452,0.514"/>
+        <Rectangle HorizontalAlignment="Left" Height="95"  Fill="White"  VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.452,0.514" Margin="0,591,0,0"/>
+        <TextBlock x:Name="currency_convertor_page" HorizontalAlignment="Left" Margin="37,580,0,0" Text="$" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="80" FontWeight="Bold" Foreground="Black"/>
+        <ComboBox PlaceholderText="Convert from" Margin="168,716,0,0" Width="404" Height="44" FontSize="24">
+            <x:String>Albania Lek (ALL)</x:String>
+            <x:String>Afghanistan Afghani	 (AFN)</x:String>
+            <x:String>Argentina Peso (ARS)</x:String>
+            <x:String>Aruba Guilder (AWG)</x:String>
+            <x:String>Australia Dollar (AUD)</x:String>
+            <x:String>Azerbaijan Manat (AZN)</x:String>
+            <x:String>Bahamas Dollar (BSD)</x:String>
+            <x:String>Barbados Dollar (BBD)</x:String>
+            <x:String>Belarus Ruble (BYN)</x:String>
+            <x:String>Belize Dollar (BZD)</x:String>
+            <x:String>Bermuda Dollar (BMD)</x:String>
+            <x:String>Bolivia Bolíviano (BOB)</x:String>
+            <x:String>Bosnia and Herzegovina Convertible Mark (BAM)</x:String>
+            <x:String>Botswana Pula (BWP)</x:String>
+            <x:String>Bulgaria Lev (BGN)</x:String>
+            <x:String>Brazil Real (BRL)</x:String>
+            <x:String>Brunei Darussalam Dollar (BND)</x:String>
+            <x:String>Cambodia Riel (KHR)</x:String>
+            <x:String>Canada Dollar (CAD)</x:String>
+            <x:String>Cayman Islands Dollar (KYD)</x:String>
+            <x:String>Chile Peso (CLP)</x:String>
+            <x:String>China Yuan Renminbi (CNY)</x:String>
+            <x:String>Colombia Peso (COP)</x:String>
+            <x:String>Costa Rica Colon (CRC)</x:String>
+            <x:String>Croatia Kuna (HRK)</x:String>
+            <x:String>Cuba Peso (CUP)</x:String>
+            <x:String>Czech Republic Koruna (CZK)</x:String>
+            <x:String>Denmark Krone (DKK)</x:String>
+            <x:String>Dominican Republic Peso (DOP)</x:String>
+            <x:String>East Caribbean Dollar (XCD)</x:String>
+            <x:String>Egypt Pound (EGP)</x:String>
+            <x:String>El Salvador Colon (SVC)</x:String>
+            <x:String>Euro Member Countries (EUR)</x:String>
+            <x:String>Falkland Islands (Malvinas) Pound (FKP)</x:String>
+            <x:String>Fiji Dollar (FJD)</x:String>
+            <x:String>Ghana Cedi (GHS)</x:String>
+            <x:String>Gibraltar Pound (GIP)</x:String>
+            <x:String>Guatemala Quetzal (GTQ)</x:String>
+            <x:String>Guernsey Pound (GGP)</x:String>
+            <x:String>Guyana Dollar (GYD)</x:String>
+            <x:String>Honduras Lempira (HNL)</x:String>
+            <x:String>Hong Kong Dollar (HKD)</x:String>
+            <x:String>Hungary Forint (HUF)</x:String>
+            <x:String>Iceland Krona (ISK)</x:String>
+            <x:String>India Rupee	(INR)</x:String>
+            <x:String>Indonesia Rupiah (IDR)</x:String>
+            <x:String>Iran Rial (IRR)</x:String>
+            <x:String>Isle of Man Pound (IMP)</x:String>
+            <x:String>Israel Shekel (ILS)</x:String>
+            <x:String>Jamaica Dollar (JMD)</x:String>
+            <x:String>Japan Yen (JPY)</x:String>
+            <x:String>Jersey Pound (JEP)</x:String>
+            <x:String>Kazakhstan Tenge (KZT)</x:String>
+            <x:String>Korea (North) Won (KPW)</x:String>
+            <x:String>Korea (South) Won (KRW)</x:String>
+            <x:String>Kyrgyzstan Som (KGS)</x:String>
+            <x:String>Laos Kip (LAK)</x:String>
+            <x:String>Lebanon Pound (LBP)</x:String>
+            <x:String>Liberia Dollar (LRD)</x:String>
+            <x:String>Macedonia Denar (MKD)</x:String>
+            <x:String>Malaysia Ringgit (MYR)</x:String>
+            <x:String>Mauritius Rupee (MUR)</x:String>
+            <x:String>Mexico Peso (MXN)</x:String>
+            <x:String>Mongolia Tughrik (MNT)</x:String>
+            <x:String>Mozambique Metical (MZN)</x:String>
+            <x:String>Namibia Dollar (NAD)</x:String>
+            <x:String>Nepal Rupee (NPR)</x:String>
+            <x:String>Netherlands Antilles Guilder	(ANG)</x:String>
+            <x:String>New Zealand Dollar	(NZD)</x:String>
+            <x:String>Nicaragua Cordoba (NIO)</x:String>
+            <x:String>Nigeria Naira (NGN)</x:String>
+            <x:String>Norway Krone (NOK)</x:String>
+            <x:String>Oman Rial (OMR)</x:String>
+            <x:String>Pakistan Rupee (PKR)</x:String>
+            <x:String>Panama Balboa (PAB)</x:String>
+            <x:String>Paraguay Guarani (PYG)</x:String>
+            <x:String>Peru Sol (PEN)</x:String>
+            <x:String>Philippines Peso (PHP)</x:String>
+            <x:String>Poland Zloty (PLN)</x:String>
+            <x:String>Qatar Riyal	(QAR)</x:String>
+            <x:String>Romania Leu (RON)</x:String>
+            <x:String>Russia Ruble (RUB)</x:String>
+            <x:String>Saint Helena Pound (SHP)</x:String>
+            <x:String>Saudi Arabia Riyal (SAR)</x:String>
+            <x:String>Serbia Dinar (RSD)</x:String>
+            <x:String>Seychelles Rupee (SCR)</x:String>
+            <x:String>Singapore Dollar (SGD)</x:String>
+            <x:String>Solomon Islands Dollar (SBD)</x:String>
+            <x:String>Somalia Shilling (SOS)</x:String>
+            <x:String>South Africa Rand (ZAR)</x:String>
+            <x:String>Sri Lanka Rupee (LKR)</x:String>
+            <x:String>Sweden Krona (SEK)</x:String>
+            <x:String>Switzerland Franc (CHF)</x:String>
+            <x:String>Suriname Dollar (SRD)</x:String>
+            <x:String>Syria Pound (SYP)</x:String>
+            <x:String>Taiwan New Dollar (TWD)</x:String>
+            <x:String>Thailand Baht (THB)</x:String>
+            <x:String>Trinidad and Tobago Dollar (TTD)</x:String>
+            <x:String>Turkey Lira (TRY)</x:String>
+            <x:String>Tuvalu Dollar (TVD)</x:String>
+            <x:String>Ukraine Hryvnia (UAH)</x:String>
+            <x:String>United Kingdom Pound (GBP)</x:String>
+            <x:String>United States Dollar (USD)</x:String>
+            <x:String>Uruguay Peso (UYU)</x:String>
+            <x:String>Uzbekistan Som (UZS)</x:String>
+            <x:String>Venezuela Bolívar (VEF)</x:String>
+            <x:String>Viet Nam Dong (VND)</x:String>
+            <x:String>Yemen Rial (YER)</x:String>
+            <x:String>Zimbabwe Dollar (ZWD)</x:String>
+        </ComboBox>
+        <ComboBox PlaceholderText="Convert to" Margin="168,789,0,0" Width="404" Height="44" FontSize="24">
+            <x:String>Albania Lek	(ALL)</x:String>
+            <x:String>Afghanistan Afghani	 (AFN)</x:String>
+            <x:String>Argentina Peso (ARS)</x:String>
+            <x:String>Aruba Guilder (AWG)</x:String>
+            <x:String>Australia Dollar (AUD)</x:String>
+            <x:String>Azerbaijan Manat (AZN)</x:String>
+            <x:String>Bahamas Dollar (BSD)</x:String>
+            <x:String>Barbados Dollar (BBD)</x:String>
+            <x:String>Belarus Ruble (BYN)</x:String>
+            <x:String>Belize Dollar (BZD)</x:String>
+            <x:String>Bermuda Dollar (BMD)</x:String>
+            <x:String>Bolivia Bolíviano (BOB)</x:String>
+            <x:String>Bosnia and Herzegovina Convertible Mark (BAM)</x:String>
+            <x:String>Botswana Pula (BWP)</x:String>
+            <x:String>Bulgaria Lev (BGN)</x:String>
+            <x:String>Brazil Real (BRL)</x:String>
+            <x:String>Brunei Darussalam Dollar (BND)</x:String>
+            <x:String>Cambodia Riel (KHR)</x:String>
+            <x:String>Canada Dollar (CAD)</x:String>
+            <x:String>Cayman Islands Dollar (KYD)</x:String>
+            <x:String>Chile Peso (CLP)</x:String>
+            <x:String>China Yuan Renminbi (CNY)</x:String>
+            <x:String>Colombia Peso (COP)</x:String>
+            <x:String>Costa Rica Colon (CRC)</x:String>
+            <x:String>Croatia Kuna (HRK)</x:String>
+            <x:String>Cuba Peso (CUP)</x:String>
+            <x:String>Czech Republic Koruna (CZK)</x:String>
+            <x:String>Denmark Krone (DKK)</x:String>
+            <x:String>Dominican Republic Peso (DOP)</x:String>
+            <x:String>East Caribbean Dollar (XCD)</x:String>
+            <x:String>Egypt Pound (EGP)</x:String>
+            <x:String>El Salvador Colon (SVC)</x:String>
+            <x:String>Euro Member Countries (EUR)</x:String>
+            <x:String>Falkland Islands (Malvinas) Pound (FKP)</x:String>
+            <x:String>Fiji Dollar (FJD)</x:String>
+            <x:String>Ghana Cedi (GHS)</x:String>
+            <x:String>Gibraltar Pound (GIP)</x:String>
+            <x:String>Guatemala Quetzal (GTQ)</x:String>
+            <x:String>Guernsey Pound (GGP)</x:String>
+            <x:String>Guyana Dollar (GYD)</x:String>
+            <x:String>Honduras Lempira (HNL)</x:String>
+            <x:String>Hong Kong Dollar (HKD)</x:String>
+            <x:String>Hungary Forint (HUF)</x:String>
+            <x:String>Iceland Krona (ISK)</x:String>
+            <x:String>India Rupee	(INR)</x:String>
+            <x:String>Indonesia Rupiah (IDR)</x:String>
+            <x:String>Iran Rial (IRR)</x:String>
+            <x:String>Isle of Man Pound (IMP)</x:String>
+            <x:String>Israel Shekel (ILS)</x:String>
+            <x:String>Jamaica Dollar (JMD)</x:String>
+            <x:String>Japan Yen (JPY)</x:String>
+            <x:String>Jersey Pound (JEP)</x:String>
+            <x:String>Kazakhstan Tenge (KZT)</x:String>
+            <x:String>Korea (North) Won (KPW)</x:String>
+            <x:String>Korea (South) Won (KRW)</x:String>
+            <x:String>Kyrgyzstan Som (KGS)</x:String>
+            <x:String>Laos Kip (LAK)</x:String>
+            <x:String>Lebanon Pound (LBP)</x:String>
+            <x:String>Liberia Dollar (LRD)</x:String>
+            <x:String>Macedonia Denar (MKD)</x:String>
+            <x:String>Malaysia Ringgit (MYR)</x:String>
+            <x:String>Mauritius Rupee (MUR)</x:String>
+            <x:String>Mexico Peso (MXN)</x:String>
+            <x:String>Mongolia Tughrik (MNT)</x:String>
+            <x:String>Mozambique Metical (MZN)</x:String>
+            <x:String>Namibia Dollar (NAD)</x:String>
+            <x:String>Nepal Rupee (NPR)</x:String>
+            <x:String>Netherlands Antilles Guilder	(ANG)</x:String>
+            <x:String>New Zealand Dollar	(NZD)</x:String>
+            <x:String>Nicaragua Cordoba (NIO)</x:String>
+            <x:String>Nigeria Naira (NGN)</x:String>
+            <x:String>Norway Krone (NOK)</x:String>
+            <x:String>Oman Rial (OMR)</x:String>
+            <x:String>Pakistan Rupee (PKR)</x:String>
+            <x:String>Panama Balboa (PAB)</x:String>
+            <x:String>Paraguay Guarani (PYG)</x:String>
+            <x:String>Peru Sol (PEN)</x:String>
+            <x:String>Philippines Peso (PHP)</x:String>
+            <x:String>Poland Zloty (PLN)</x:String>
+            <x:String>Qatar Riyal	(QAR)</x:String>
+            <x:String>Romania Leu (RON)</x:String>
+            <x:String>Russia Ruble (RUB)</x:String>
+            <x:String>Saint Helena Pound (SHP)</x:String>
+            <x:String>Saudi Arabia Riyal (SAR)</x:String>
+            <x:String>Serbia Dinar (RSD)</x:String>
+            <x:String>Seychelles Rupee (SCR)</x:String>
+            <x:String>Singapore Dollar (SGD)</x:String>
+            <x:String>Solomon Islands Dollar (SBD)</x:String>
+            <x:String>Somalia Shilling (SOS)</x:String>
+            <x:String>South Africa Rand (ZAR)</x:String>
+            <x:String>Sri Lanka Rupee (LKR)</x:String>
+            <x:String>Sweden Krona (SEK)</x:String>
+            <x:String>Switzerland Franc (CHF)</x:String>
+            <x:String>Suriname Dollar (SRD)</x:String>
+            <x:String>Syria Pound (SYP)</x:String>
+            <x:String>Taiwan New Dollar (TWD)</x:String>
+            <x:String>Thailand Baht (THB)</x:String>
+            <x:String>Trinidad and Tobago Dollar (TTD)</x:String>
+            <x:String>Turkey Lira (TRY)</x:String>
+            <x:String>Tuvalu Dollar (TVD)</x:String>
+            <x:String>Ukraine Hryvnia (UAH)</x:String>
+            <x:String>United Kingdom Pound (GBP)</x:String>
+            <x:String>United States Dollar (USD)</x:String>
+            <x:String>Uruguay Peso (UYU)</x:String>
+            <x:String>Uzbekistan Som (UZS)</x:String>
+            <x:String>Venezuela Bolívar (VEF)</x:String>
+            <x:String>Viet Nam Dong (VND)</x:String>
+            <x:String>Yemen Rial (YER)</x:String>
+            <x:String>Zimbabwe Dollar (ZWD)</x:String>
+        </ComboBox>
+        <Rectangle HorizontalAlignment="Left" Height="490" Margin="166,124,0,0" Fill="Black" VerticalAlignment="Top" Width="990"/>
+        <TextBlock HorizontalAlignment="Left" Margin="187,146,0,0" Text="Top Currencies" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" FontWeight="Normal"/>
+        <Rectangle HorizontalAlignment="Left" Height="3" Margin="190,199,0,0" Fill="White" VerticalAlignment="Top" Width="282" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Image HorizontalAlignment="Left" Height="45" Margin="190,232,0,0" VerticalAlignment="Top" Width="88" Source="/Assets/american_flag.jpg"/>
+        <TextBlock HorizontalAlignment="Left" Margin="284,232,0,0" Text="United States Dollar (USD)" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28"/>
+        <TextBlock HorizontalAlignment="Left" Margin="290,309,0,0" Text="Euro (EUR)" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28"/>
+        <Image HorizontalAlignment="Left" Height="50" Margin="191,303,0,0" VerticalAlignment="Top" Width="76" Source="/Assets/1280px-Flag_of_Europe.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="290,390,0,0" Text="Japanese Yen (JPY)" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28"/>
+        <Image HorizontalAlignment="Left" Height="46" Margin="194,386,0,0" VerticalAlignment="Top" Width="106" Source="/Assets/800px-Flag_of_Japan.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="290,470,0,0" Text="British Pound (GBP)" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28"/>
+        <Image HorizontalAlignment="Left" Height="65" Margin="194,471,0,0" VerticalAlignment="Top" Width="72" Source="/Assets/800px-Flag_of_the_United_Kingdom.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="290,539,0,0" Text="Canadian Dollar (CAD)" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28"/>
+        <Image HorizontalAlignment="Left" Height="55" Margin="194,540,0,0" VerticalAlignment="Top" Width="72" Source="/Assets/1920px-Flag_of_Canada_(Pantone).png"/>
+        <TextBlock x:Name="usd_value" HorizontalAlignment="Left" Margin="971,232,0,0" Text="#usd_value" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28"/>
+        <TextBlock x:Name="euro_value" HorizontalAlignment="Left" Margin="971,309,0,0" Text="#euro_value" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28"/>
+        <TextBlock x:Name="jpy_value" HorizontalAlignment="Left" Margin="971,390,0,0" Text="#jpy_value" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28"/>
+        <TextBlock x:Name="gbp_value" HorizontalAlignment="Left" Margin="971,470,0,0" Text="#gbp_value" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28"/>
+        <TextBlock x:Name="cad_value" HorizontalAlignment="Left" Margin="971,539,0,0" Text="#cad_value" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28"/>
+        <TextBox x:Name="convert_from_textbox" HorizontalAlignment="Left" Margin="168,638,0,0" Text="Enter Amount:" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" FontSize="24" Foreground="Black" Background="White" BorderBrush="#66000000" Width="404" RenderTransformOrigin="0.511,0.273" GotFocus="convert_from_textbox_GotFocus"/>
+        <Rectangle HorizontalAlignment="Left" Height="193" Margin="604,638,0,0" Fill="LightGray" VerticalAlignment="Top" Width="552"/>
+        <TextBlock x:Name="cad_value_Copy" HorizontalAlignment="Left" Margin="621,647,0,0" Text="Equals to" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28" Foreground="Black" FontWeight="Normal"/>
+        <Rectangle HorizontalAlignment="Left" Height="1" Margin="621,689,0,0" Fill="Black" VerticalAlignment="Top" Width="160" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <TextBlock x:Name="result_value" HorizontalAlignment="Left" Margin="718,704,0,0" Text="#result_value" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="72" Foreground="Black"/>
+    </Grid>
+</Page>

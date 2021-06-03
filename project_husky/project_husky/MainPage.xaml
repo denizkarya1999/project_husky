@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="project_husky.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:project_husky"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="White">
+
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="1100" Stroke="Black" Fill="Black"  VerticalAlignment="Center" Width="124" RenderTransformOrigin="0.452,0.514"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="10,530,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.34,0.56" Source="Assets/currency_convertor_unselected.png"/>
+        <TextBlock x:Name="currency_convertor_page" HorizontalAlignment="Left" Margin="37,580,0,0" Text="$" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="80" FontWeight="Bold" Tapped="currency_convertor_page_Tapped"/>
+        <Rectangle HorizontalAlignment="Left" Height="95"  Fill="White"  VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.452,0.514" Margin="0,251,0,0"/>
+
+    </Grid>
+</Page>
