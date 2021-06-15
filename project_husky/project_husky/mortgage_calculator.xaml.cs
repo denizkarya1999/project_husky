@@ -20,24 +20,19 @@ namespace project_husky
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class currency_convertor : Page
+    public sealed partial class mortgage_calculator : Page
     {
-        public currency_convertor()
+        public mortgage_calculator()
         {
             this.InitializeComponent();
         }
 
-        private void convert_from_textbox_GotFocus(object sender, RoutedEventArgs e)
+        private void currency_convertor_page_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            convert_from_textbox.Text = " ";
+            this.Frame.Navigate(typeof(currency_convertor));
         }
 
-        private void mortgage_calculator_button_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(mortgage_calculator));
-        }
-
-        private void info_button_Tapped(object sender, TappedRoutedEventArgs e)
+        private void mortgage_calculator_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(info));
         }
@@ -45,6 +40,26 @@ namespace project_husky
         private void stocks_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(stocks_main));
+        }
+
+        private void loan_amount_textbox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            loan_amount_textbox.Text = "";
+        }
+
+        private void loan_fees_textbox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            loan_fees_textbox.Text = "";
+        }
+
+        private void annual_interest_textbox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            annual_interest_textbox.Text = "";
+        }
+
+        private void number_of_years_textbox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            number_of_years_textbox.Text = "";
         }
 
         private void bitcoin_Tapped(object sender, TappedRoutedEventArgs e)

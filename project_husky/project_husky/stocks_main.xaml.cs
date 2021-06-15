@@ -13,23 +13,20 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace project_husky
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class stocks_main : Page
     {
-        public MainPage()
+        public stocks_main()
         {
             this.InitializeComponent();
         }
-        private void stocks_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(stocks_main));
-        }
+
 
         private void currency_convertor_page_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -51,9 +48,14 @@ namespace project_husky
             this.Frame.Navigate(typeof(mortgage_calculator));
         }
 
+        private void industrial_performance_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Stocks));
+        }
+
         private void web_home_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            webView1.Navigate(new Uri("https://www.coindesk.com/coindesk20"));
+            webView1.Navigate(new Uri("https://www.nasdaq.com/market-activity/stocks"));
         }
 
         private void web_go_Tapped(object sender, TappedRoutedEventArgs e)
@@ -69,6 +71,11 @@ namespace project_husky
         private void web_refresh_Tapped(object sender, TappedRoutedEventArgs e)
         {
             webView1.Refresh();
+        }
+
+        private void bitcoin_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(MainPage));
         }
     }
 }

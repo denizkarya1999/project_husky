@@ -20,16 +20,16 @@ namespace project_husky
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class currency_convertor : Page
+    public sealed partial class info : Page
     {
-        public currency_convertor()
+        public info()
         {
             this.InitializeComponent();
         }
 
-        private void convert_from_textbox_GotFocus(object sender, RoutedEventArgs e)
+        private void currency_convertor_page_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            convert_from_textbox.Text = " ";
+            this.Frame.Navigate(typeof(currency_convertor));
         }
 
         private void mortgage_calculator_button_Tapped(object sender, TappedRoutedEventArgs e)
@@ -37,9 +37,9 @@ namespace project_husky
             this.Frame.Navigate(typeof(mortgage_calculator));
         }
 
-        private void info_button_Tapped(object sender, TappedRoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(info));
+            this.Frame.Navigate(typeof(join_studio));
         }
 
         private void stocks_Tapped(object sender, TappedRoutedEventArgs e)

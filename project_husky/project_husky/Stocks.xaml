@@ -1,0 +1,58 @@
+﻿<Page
+    x:Class="project_husky.Stocks"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:project_husky"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="White">
+    <ScrollViewer  HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <Rectangle HorizontalAlignment="Left" Height="1100" Stroke="Black" Fill="Black"  VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.452,0.514" Margin="-2,-66,0,0"/>
+            <TextBlock x:Name="currency_convertor_page" HorizontalAlignment="Left" Margin="37,431,0,0" Text="$" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="80" FontWeight="Bold" Foreground="White" Tapped="currency_convertor_page_Tapped"/>
+            <Image x:Name="mortgage_calculator" HorizontalAlignment="Left" Height="100" Margin="18,598,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/mortgage_calculator_unselected.png" Tapped="mortgage_calculator_Tapped"/>
+            <Image x:Name="info" HorizontalAlignment="Left" Height="100" Margin="10,760,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/info_unselected.png" Tapped="info_Tapped"/>
+            <Rectangle HorizontalAlignment="Left" Height="113"  Fill="White"  VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.452,0.514"  Margin="2,263,0,0"/>
+            <Image x:Name="mortgage_calculator1_Copy" HorizontalAlignment="Left" Height="100" Margin="21,269,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/stocks_selected.png"/>
+            <TextBlock  x:Name="stocks" HorizontalAlignment="Left" Margin="166,33,0,0" Text="Stocks" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="48" FontWeight="Normal" Tapped="stocks_Tapped"/>
+            <TextBlock HorizontalAlignment="Left" Margin="336,33,0,0" Text="Industrial Performance" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="48" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Margin="166,121,0,0" Text="Energy Minerals" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="38" FontWeight="Normal"/>
+            <TextBlock HorizontalAlignment="Left" Margin="166,197,0,0" Text="Health Services" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="38" FontWeight="Normal"/>
+            <TextBlock HorizontalAlignment="Left" Margin="166,273,0,0" Text="Transportation" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="38" FontWeight="Normal"/>
+            <TextBlock HorizontalAlignment="Left" Margin="166,351,0,0" Text="Finance" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="38" FontWeight="Normal"/>
+            <TextBlock HorizontalAlignment="Left" Margin="166,425,0,0" Text="Communications" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="38" FontWeight="Normal"/>
+            <TextBlock HorizontalAlignment="Left" Margin="166,504,0,0" Text="Commercial Services" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="38" FontWeight="Normal"/>
+            <TextBlock HorizontalAlignment="Left" Margin="166,585,0,0" Text="Consumer Non-Durables" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="38" FontWeight="Normal"/>
+            <TextBlock HorizontalAlignment="Left" Margin="166,667,0,0" Text="Utilities" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="38" FontWeight="Normal"/>
+            <TextBlock HorizontalAlignment="Left" Margin="166,748,0,0" Text="Electronic Technology" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="38" FontWeight="Normal"/>
+            <TextBlock HorizontalAlignment="Left" Margin="166,827,0,0" Text="Retail Trade" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="38" FontWeight="Normal"/>
+            <TextBlock HorizontalAlignment="Left" Margin="166,909,0,0" Text="Consumer Durables" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="38" FontWeight="Normal"/>
+            <Rectangle x:Name="energy_minarels_label" HorizontalAlignment="Left" Height="26" Margin="978,135,0,0" Fill="Gray" VerticalAlignment="Top" Width="62"/>
+            <Rectangle x:Name="health_services" HorizontalAlignment="Left" Height="26" Margin="978,213,0,0" Fill="Gray" VerticalAlignment="Top" Width="62"/>
+            <Rectangle x:Name="transportation" HorizontalAlignment="Left" Height="26" Margin="978,290,0,0" Fill="Gray" VerticalAlignment="Top" Width="62"/>
+            <Rectangle x:Name="finance" HorizontalAlignment="Left" Height="26" Margin="978,364,0,0" Fill="Gray" VerticalAlignment="Top" Width="62"/>
+            <Rectangle x:Name="communications" HorizontalAlignment="Left" Height="26" Margin="978,441,0,0" Fill="Gray" VerticalAlignment="Top" Width="62"/>
+            <Rectangle x:Name="commercial_services" HorizontalAlignment="Left" Height="26" Margin="978,520,0,0" Fill="Gray" VerticalAlignment="Top" Width="62"/>
+            <Rectangle x:Name="consumer_non_durables" HorizontalAlignment="Left" Height="26" Margin="978,598,0,0" Fill="Gray" VerticalAlignment="Top" Width="62"/>
+            <Rectangle x:Name="utilities" HorizontalAlignment="Left" Height="26" Margin="978,680,0,0" Fill="Gray" VerticalAlignment="Top" Width="62"/>
+            <Rectangle x:Name="electronic_technology" HorizontalAlignment="Left" Height="26" Margin="978,769,0,0" Fill="Gray" VerticalAlignment="Top" Width="62"/>
+            <Rectangle x:Name="retail_trade" HorizontalAlignment="Left" Height="26" Margin="978,847,0,0" Fill="Gray" VerticalAlignment="Top" Width="62"/>
+            <Rectangle x:Name="consumer_durables" HorizontalAlignment="Left" Height="26" Margin="978,929,0,0" Fill="Gray" VerticalAlignment="Top" Width="62"/>
+            <Rectangle HorizontalAlignment="Left" Height="857" Margin="1005,121,0,0" Fill="Black" VerticalAlignment="Top" Width="8"/>
+            <TextBlock x:Name ="energy_minerals_label" HorizontalAlignment="Left" Margin="1060,123,0,0" Text="0.00%" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Gray" FontSize="32" FontWeight="Normal"/>
+            <TextBlock x:Name ="health_services_label" HorizontalAlignment="Left" Margin="1060,203,0,0" Text="0.00%" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Gray" FontSize="32" FontWeight="Normal"/>
+            <TextBlock x:Name ="transportation_label" HorizontalAlignment="Left" Margin="1060,277,0,0" Text="0.00%" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Gray" FontSize="32" FontWeight="Normal"/>
+            <TextBlock x:Name ="finance_label" HorizontalAlignment="Left" Margin="1060,355,0,0" Text="0.00%" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Gray" FontSize="32" FontWeight="Normal"/>
+            <TextBlock x:Name ="communications_label" HorizontalAlignment="Left" Margin="1060,429,0,0" Text="0.00%" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Gray" FontSize="32" FontWeight="Normal"/>
+            <TextBlock x:Name ="commercial_services_label" HorizontalAlignment="Left" Margin="1060,509,0,0" Text="0.00%" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Gray" FontSize="32" FontWeight="Normal"/>
+            <TextBlock x:Name ="consumer_non_durables_label" HorizontalAlignment="Left" Margin="1060,585,0,0" Text="0.00%" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Gray" FontSize="32" FontWeight="Normal"/>
+            <TextBlock x:Name ="utilities_label" HorizontalAlignment="Left" Margin="1060,665,0,0" Text="0.00%" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Gray" FontSize="32" FontWeight="Normal"/>
+            <TextBlock x:Name ="electronic_technology_label" HorizontalAlignment="Left" Margin="1060,761,0,0" Text="0.00%" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Gray" FontSize="32" FontWeight="Normal"/>
+            <TextBlock x:Name ="retail_trade_label" HorizontalAlignment="Left" Margin="1060,837,0,0" Text="0.00%" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Gray" FontSize="32" FontWeight="Normal"/>
+            <TextBlock x:Name ="consumer_durables_label" HorizontalAlignment="Left" Margin="1060,917,0,0" Text="0.00%" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Gray" FontSize="32" FontWeight="Normal"/>
+            <Image x:Name="bitcoin" HorizontalAlignment="Left" Height="108" Margin="34,119,0,0" VerticalAlignment="Top" Width="96" Source="/Assets/bitcoin_unselected.png" Tapped="bitcoin_Tapped"/>
+
+        </Grid>
+    </ScrollViewer>
+</Page>

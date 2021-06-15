@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="project_husky.join_studio"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:project_husky"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Black">
+
+    <Grid>
+        <WebView Margin="0,57,0,0" x:Name="webView1" Source="https://docs.google.com/forms/d/e/1FAIpQLSc35mrpzrQbeLi93HGoV5HfpCL7RqUxwORkU6C7bMOCaVAimA/viewform?usp=sf_link"/>
+        <TextBlock x:Name="return_to_project_husky" HorizontalAlignment="Left" Margin="10,10,0,0" Text="Return to Project Husky" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Tapped="return_to_project_husky_Tapped"/>
+
+    </Grid>
+</Page>

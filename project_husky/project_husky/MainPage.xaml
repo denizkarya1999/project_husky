@@ -9,10 +9,25 @@
     Background="White">
 
     <Grid>
-        <Rectangle HorizontalAlignment="Left" Height="1100" Stroke="Black" Fill="Black"  VerticalAlignment="Center" Width="124" RenderTransformOrigin="0.452,0.514"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="499*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Image HorizontalAlignment="Left" Height="100" Margin="10,530,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.34,0.56" Source="Assets/currency_convertor_unselected.png"/>
-        <TextBlock x:Name="currency_convertor_page" HorizontalAlignment="Left" Margin="37,580,0,0" Text="$" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="80" FontWeight="Bold" Tapped="currency_convertor_page_Tapped"/>
-        <Rectangle HorizontalAlignment="Left" Height="95"  Fill="White"  VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.452,0.514" Margin="0,251,0,0"/>
+        <Rectangle HorizontalAlignment="Left" Height="1100" Stroke="Black" Fill="Black"  VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.452,0.514"/>
+        <TextBlock x:Name="currency_convertor_page" HorizontalAlignment="Left" Margin="37,431,0,0" Text="$" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="80" FontWeight="Bold" Foreground="White" Tapped="currency_convertor_page_Tapped" Height="106" Width="46"/>
+        <TextBlock HorizontalAlignment="Left" Margin="166,33,0,0" Text="Cryptocurrency" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="48" FontWeight="Bold" Height="64" Width="371"/>
+        <Image x:Name="mortgage_calculator1" HorizontalAlignment="Left" Height="100" Margin="10,760,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/info_unselected.png" Tapped="mortgage_calculator_Tapped"/>
+        <Image x:Name="stocks" HorizontalAlignment="Left" Height="100" Margin="21,269,0,0" VerticalAlignment="Top" Width="100" Source="/stocks_unselected.png" Tapped="stocks_Tapped"/>
+        <Image x:Name="mortgage_calculator_button" HorizontalAlignment="Left" Height="100" Margin="18,589,0,0" VerticalAlignment="Top" Width="88" Source="/Assets/mortgage_calculator_unselected.png" RenderTransformOrigin="0.253,0.898" Tapped="mortgage_calculator_button_Tapped"/>
+        <Rectangle HorizontalAlignment="Left" Height="98"  Fill="White"  VerticalAlignment="Top" Width="126" RenderTransformOrigin="0.452,0.514" Margin="0,111,0,0"/>
+        <TextBlock x:Name="currency_convertor_page_Copy" HorizontalAlignment="Left" Margin="37,431,0,0" Text="$" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="80" FontWeight="Bold" Foreground="White" Tapped="currency_convertor_page_Tapped" Height="106" Width="46"/>
+        <Image x:Name="stocks_Copy" HorizontalAlignment="Left" Height="108" Margin="34,119,0,0" VerticalAlignment="Top" Width="96" Source="/Assets/bitcoin.png" Tapped="stocks_Tapped"/>
+        <WebView Margin="166,140,45,41" x:Name="webView1" Source="https://www.coindesk.com/coindesk20"/>
+        <Image x:Name="web_home" HorizontalAlignment="Left" Height="58" Margin="551,39,0,0" VerticalAlignment="Top" Width="59" Source="/Assets/home.png" Tapped="web_home_Tapped"/>
+        <Image x:Name="web_back" HorizontalAlignment="Left" Height="58" Margin="651,37,0,0" VerticalAlignment="Top" Width="59" Source="/Assets/back_button.png" Tapped="web_back_Tapped" />
+        <Image x:Name="web_go" HorizontalAlignment="Left" Height="58" Margin="745,37,0,0" VerticalAlignment="Top" Width="59" Source="/Assets/go_button.png" Tapped="web_go_Tapped"/>
+        <Image x:Name="web_refresh" HorizontalAlignment="Left" Height="58" Margin="848,39,0,0" VerticalAlignment="Top" Width="59" Source="/Assets/refresh.png" Tapped="web_refresh_Tapped"/>
 
     </Grid>
 </Page>

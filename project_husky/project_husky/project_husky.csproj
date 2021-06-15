@@ -122,10 +122,25 @@
     <Compile Include="currency_convertor.xaml.cs">
       <DependentUpon>currency_convertor.xaml</DependentUpon>
     </Compile>
+    <Compile Include="info.xaml.cs">
+      <DependentUpon>info.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="join_studio.xaml.cs">
+      <DependentUpon>join_studio.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="mortgage_calculator.xaml.cs">
+      <DependentUpon>mortgage_calculator.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stocks.xaml.cs">
+      <DependentUpon>Stocks.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="stocks_main.xaml.cs">
+      <DependentUpon>stocks_main.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -138,21 +153,31 @@
     <Content Include="Assets\800px-Flag_of_Japan.png" />
     <Content Include="Assets\800px-Flag_of_the_United_Kingdom.png" />
     <Content Include="Assets\american_flag.jpg" />
+    <Content Include="Assets\back_button.png" />
     <Content Include="Assets\BadgeLogo.scale-100.png" />
     <Content Include="Assets\BadgeLogo.scale-125.png" />
     <Content Include="Assets\BadgeLogo.scale-150.png" />
     <Content Include="Assets\BadgeLogo.scale-200.png" />
     <Content Include="Assets\BadgeLogo.scale-400.png" />
+    <Content Include="Assets\bitcoin.png" />
+    <Content Include="Assets\bitcoin_unselected.png" />
+    <Content Include="Assets\go_button.png" />
+    <Content Include="Assets\home.png" />
+    <Content Include="Assets\info_selected.png" />
+    <Content Include="Assets\info_unselected.png" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-125.png" />
     <Content Include="Assets\LargeTile.scale-150.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />
     <Content Include="Assets\LargeTile.scale-400.png" />
+    <Content Include="Assets\mortgage_calculator_selected.png" />
+    <Content Include="Assets\mortgage_calculator_unselected.png" />
     <Content Include="Assets\project_husky_splash.scale-100.png" />
     <Content Include="Assets\project_husky_splash.scale-125.png" />
     <Content Include="Assets\project_husky_splash.scale-150.png" />
     <Content Include="Assets\project_husky_splash.scale-200.png" />
     <Content Include="Assets\project_husky_splash.scale-400.png" />
+    <Content Include="Assets\refresh.png" />
     <Content Include="Assets\SmallTile.scale-100.png" />
     <Content Include="Assets\SmallTile.scale-125.png" />
     <Content Include="Assets\SmallTile.scale-150.png" />
@@ -180,6 +205,7 @@
     <Content Include="Assets\Square44x44Logo.targetsize-256.png" />
     <Content Include="Assets\Square44x44Logo.targetsize-32.png" />
     <Content Include="Assets\Square44x44Logo.targetsize-48.png" />
+    <Content Include="Assets\stocks_selected.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-125.png" />
     <Content Include="Assets\StoreLogo.scale-150.png" />
@@ -196,6 +222,7 @@
     <Content Include="Assets\Square44x44Logo.scale-200.png" />
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="stocks_unselected.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -206,9 +233,29 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="info.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="join_studio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="mortgage_calculator.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stocks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="stocks_main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

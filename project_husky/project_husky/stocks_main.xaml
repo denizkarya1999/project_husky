@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="project_husky.stocks_main"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:project_husky"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="White">
+
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="1034" Stroke="Black" Fill="Black"  VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.452,0.514" Margin="-2,0,0,0"/>
+        <TextBlock x:Name="currency_convertor_page" HorizontalAlignment="Left" Margin="37,431,0,0" Text="$" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="80" FontWeight="Bold" Foreground="White" Tapped="currency_convertor_page_Tapped"/>
+        <Image x:Name="mortgage_calculator" HorizontalAlignment="Left" Height="100" Margin="18,598,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/mortgage_calculator_unselected.png" Tapped="mortgage_calculator_Tapped"/>
+        <Image x:Name="info" HorizontalAlignment="Left" Height="100" Margin="10,760,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/info_unselected.png" Tapped="info_Tapped"/>
+        <Rectangle HorizontalAlignment="Left" Height="113"  Fill="White"  VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.452,0.514"  Margin="2,263,0,0"/>
+        <Image x:Name="mortgage_calculator1_Copy" HorizontalAlignment="Left" Height="100" Margin="21,269,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/stocks_selected.png"/>
+        <TextBlock  x:Name="stocks" HorizontalAlignment="Left" Margin="166,33,0,0" Text="Stocks" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="48" FontWeight="Bold"/>
+        <TextBlock x:Name="industrial_performance" HorizontalAlignment="Left" Margin="336,33,0,0" Text="Industrial Performance" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="48" FontWeight="Normal" Tapped="industrial_performance_Tapped"/>
+        <WebView Margin="166,140,48,41" x:Name="webView1" Source="https://www.nasdaq.com/market-activity/stocks"/>
+        <Image x:Name="web_home" HorizontalAlignment="Left" Height="58" Margin="899,35,0,0" VerticalAlignment="Top" Width="59" Source="/Assets/home.png" Tapped="web_home_Tapped"/>
+        <Image x:Name="web_back" HorizontalAlignment="Left" Height="58" Margin="1000,33,0,0" VerticalAlignment="Top" Width="59" Source="/Assets/back_button.png" Tapped="web_back_Tapped" />
+        <Image x:Name="web_go" HorizontalAlignment="Left" Height="58" Margin="1093,33,0,0" VerticalAlignment="Top" Width="59" Source="/Assets/go_button.png" Tapped="web_go_Tapped"/>
+        <Image x:Name="web_refresh" HorizontalAlignment="Left" Height="58" Margin="1189,35,0,0" VerticalAlignment="Top" Width="59" Source="/Assets/refresh.png" Tapped="web_refresh_Tapped"/>
+        <Image x:Name="bitcoin" HorizontalAlignment="Left" Height="108" Margin="34,119,0,0" VerticalAlignment="Top" Width="96" Source="/Assets/bitcoin_unselected.png" Tapped="bitcoin_Tapped"/>
+    </Grid>
+</Page>
