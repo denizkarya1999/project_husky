@@ -66,5 +66,10 @@ namespace project_husky
         {
             this.Frame.Navigate(typeof(MainPage));
         }
+
+        private void calculate_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
     }
 }

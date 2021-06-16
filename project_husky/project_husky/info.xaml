@@ -31,19 +31,19 @@
             <TextBlock HorizontalAlignment="Left" Margin="193,790,0,0" Text="Programming Department Lead, AI Developer" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="26" FontWeight="Normal"/>
             <TextBlock HorizontalAlignment="Left" Margin="193,863,0,0" Text="Dominick Dulan" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="26" FontWeight="Bold"/>
             <TextBlock HorizontalAlignment="Left" Margin="193,903,0,0" Text="Back End Division, Back End Developer" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="26" FontWeight="Normal"/>
-            <Rectangle HorizontalAlignment="Left" Height="475" Margin="832,292,0,0" Fill="Black" VerticalAlignment="Top" Width="627"/>
+            <Rectangle HorizontalAlignment="Left" Height="450" Margin="832,292,0,0" Fill="Black" VerticalAlignment="Top" Width="627"/>
             <TextBlock HorizontalAlignment="Left" Margin="861,312,0,0" Text="About" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="36" FontWeight="Bold"/>
             <Rectangle HorizontalAlignment="Left" Height="3" Margin="861,378,0,0" Fill="White" VerticalAlignment="Top" Width="358"/>
             <TextBlock HorizontalAlignment="Left" Margin="861,414,0,0" Text="E-Mail" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="26" FontWeight="Bold"/>
-            <TextBlock HorizontalAlignment="Left" Margin="861,455,0,0" Text="dacikbas@umich.edu" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="26" FontWeight="Normal"/>
             <TextBlock HorizontalAlignment="Left" Margin="861,523,0,0" Text="Phone" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="26" FontWeight="Bold"/>
-            <TextBlock HorizontalAlignment="Left" Margin="861,564,0,0" Text="+1 (734) 660 8867" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="26" FontWeight="Normal"/>
-            <TextBlock HorizontalAlignment="Left" Margin="861,639,0,0" Text="Community Server" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="26" FontWeight="Bold"/>
-            <HyperlinkButton Content="https://discord.gg/2NYKwNVc" Margin="861,681,0,0" VerticalAlignment="Top" FontSize="26" Foreground="White"/>
-            <Button Content="Rate Us" Margin="889,800,0,0" VerticalAlignment="Top" Height="80" Width="238" Foreground="Black" Background="#33000000" FontSize="26"/>
-            <Button Content="Apply Studio" Margin="1170,800,0,0" VerticalAlignment="Top" Height="80" Width="238" Foreground="Black" Background="#33000000" FontSize="26" Click="Button_Click"/>
+            <TextBlock HorizontalAlignment="Left" Margin="861,623,0,0" Text="Community Server" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="26" FontWeight="Bold"/>
+            <HyperlinkButton Content="Developers Without Limits Discord Server" Margin="861,661,0,0" VerticalAlignment="Top" FontSize="26" Foreground="White" NavigateUri="https://discord.gg/2NYKwNVc"/>
+            <Button Content="Rate Us" Margin="883,776,0,0" VerticalAlignment="Top" Height="80" Width="238" Foreground="Black" Background="#33000000" FontSize="26"/>
+            <Button Content="Apply Studio" Margin="1170,776,0,0" VerticalAlignment="Top" Height="80" Width="238" Foreground="Black" Background="#33000000" FontSize="26" Click="Button_Click"/>
             <Image x:Name="stocks" HorizontalAlignment="Left" Height="100" Margin="21,269,0,0" VerticalAlignment="Top" Width="100" Source="/stocks_unselected.png" Tapped="stocks_Tapped"/>
             <Image x:Name="bitcoin" HorizontalAlignment="Left" Height="108" Margin="34,119,0,0" VerticalAlignment="Top" Width="96" Source="/Assets/bitcoin_unselected.png" Tapped="bitcoin_Tapped"/>
+            <HyperlinkButton x:Name="email" Content="dacikbas@umich.edu" Margin="861,453,0,0" VerticalAlignment="Top" FontSize="26" Foreground="White"/>
+            <TextBlock Text="+1 (734) 660 8867" Margin="861,565,0,0" VerticalAlignment="Top" FontSize="26" Foreground="White"/>
 
         </Grid>
 

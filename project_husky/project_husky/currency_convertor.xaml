@@ -13,7 +13,7 @@
             <Rectangle HorizontalAlignment="Left" Height="1100" Stroke="Black" Fill="Black"  VerticalAlignment="Center" Width="124" RenderTransformOrigin="0.452,0.514"/>
             <Rectangle HorizontalAlignment="Left" Height="95"  Fill="White"  VerticalAlignment="Top" Width="126" RenderTransformOrigin="0.452,0.514" Margin="-2,441,0,0"/>
             <TextBlock x:Name="currency_convertor_page" HorizontalAlignment="Left" Margin="37,431,0,0" Text="$" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="80" FontWeight="Bold" Foreground="Black"/>
-            <ComboBox PlaceholderText="Convert from" Margin="168,716,0,0" Width="404" Height="44" FontSize="24">
+            <ComboBox x:Name="convert_from" PlaceholderText="Convert from" Margin="168,716,0,0" Width="404" Height="44" FontSize="24">
                 <x:String>Albania Lek (ALL)</x:String>
                 <x:String>Afghanistan Afghani	 (AFN)</x:String>
                 <x:String>Argentina Peso (ARS)</x:String>
@@ -124,7 +124,7 @@
                 <x:String>Yemen Rial (YER)</x:String>
                 <x:String>Zimbabwe Dollar (ZWD)</x:String>
             </ComboBox>
-            <ComboBox PlaceholderText="Convert to" Margin="168,789,0,0" Width="404" Height="44" FontSize="24">
+            <ComboBox x:Name="convert_to" PlaceholderText="Convert to" Margin="168,789,0,0" Width="404" Height="44" FontSize="24">
                 <x:String>Albania Lek	(ALL)</x:String>
                 <x:String>Afghanistan Afghani	 (AFN)</x:String>
                 <x:String>Argentina Peso (ARS)</x:String>
@@ -270,6 +270,11 @@
             <Image x:Name="info_button" HorizontalAlignment="Left" Height="100" Margin="10,760,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/info_unselected.png" Tapped="info_button_Tapped"/>
             <Image x:Name="stocks" HorizontalAlignment="Left" Height="100" Margin="21,269,0,0" VerticalAlignment="Top" Width="100" Source="/stocks_unselected.png" Tapped="stocks_Tapped"/>
             <Image x:Name="bitcoin" HorizontalAlignment="Left" Height="108" Margin="34,119,0,0" VerticalAlignment="Top" Width="96" Source="/Assets/bitcoin_unselected.png" Tapped="bitcoin_Tapped"/>
+            <Rectangle HorizontalAlignment="Left" Height="52" Margin="278,867,0,0" Fill="Black" VerticalAlignment="Top" Width="185"/>
+            <Button x:Name="calculate" Content="Calculate" Margin="278,867,0,0" VerticalAlignment="Top" Height="52" Width="185" FontSize="25" Tapped="calculate_Tapped"/>
+
+            <Rectangle HorizontalAlignment="Left" Height="52" Margin="788,867,0,0" Fill="Black" VerticalAlignment="Top" Width="185"/>
+            <Button x:Name="reset" Content="Reset" Margin="788,867,0,0" VerticalAlignment="Top" Height="52" Width="185" FontSize="25" Tapped="reset_Tapped"/>
         </Grid>
     </ScrollViewer>
 </Page>

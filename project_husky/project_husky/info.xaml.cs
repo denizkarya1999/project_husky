@@ -51,5 +51,16 @@ namespace project_husky
         {
             this.Frame.Navigate(typeof(MainPage));
         }
+
+        private void email_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            var emailMessage = new Windows.ApplicationModel.Email.EmailMessage();
+
+            var emailRecipient = new Windows.ApplicationModel.Email.EmailRecipient("dacikbas@umich.edu");
+            emailMessage.To.Add(emailRecipient);
+
+            Windows.ApplicationModel.Email.EmailManager.ShowComposeNewEmailAsync(emailMessage);
+        }
+
     }
 }

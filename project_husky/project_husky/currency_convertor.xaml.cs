@@ -51,5 +51,17 @@ namespace project_husky
         {
             this.Frame.Navigate(typeof(MainPage));
         }
+
+        private void calculate_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
+
+        private void reset_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            convert_from_textbox.Text = "Enter Amount:";
+            convert_from.SelectedIndex = -1;
+            convert_to.SelectedIndex = -1;
+        }
     }
 }
