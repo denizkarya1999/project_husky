@@ -22,6 +22,10 @@ namespace project_husky
     /// </summary>
     public sealed partial class mortgage_calculator : Page
     {
+        double loan_amount = 0.0;
+        double loan_fees = 0.0;
+        double annual_interest = 0.0;
+        int number_of_years = 0;
         public mortgage_calculator()
         {
             this.InitializeComponent();
@@ -69,7 +73,17 @@ namespace project_husky
 
         private void calculate_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            loan_amount = Convert.ToDouble(loan_amount_textbox.Text);
+            loan_fees = Convert.ToDouble(loan_fees_textbox.Text);
+            annual_interest = Convert.ToDouble(annual_interest_textbox.Text);
+            number_of_years = Int32.Parse(number_of_years_textbox.Text);
 
+            // Write your formula here
+
+            // Assign the result to those values
+            monthly_payment_label.Text = "";
+            total_amount_label.Text = "";
+            interest_label.Text = "";
         }
     }
 }
