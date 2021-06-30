@@ -8,8 +8,8 @@
 
   <Identity
     Name="d44ed357-0cd5-4a01-97ad-78f5aea2f8ed"
-    Publisher="CN=deniz"
-    Version="1.0.0.0" />
+    Publisher="CN=Deniz K. Acikbas"
+    Version="0.1.1.0" />
 
   <mp:PhoneIdentity PhoneProductId="d44ed357-0cd5-4a01-97ad-78f5aea2f8ed" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
