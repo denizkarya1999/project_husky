@@ -5,6 +5,7 @@
 
 # Zip Files
 *.zip
+
 # User-specific files
 *.rsuser
 *.suo
