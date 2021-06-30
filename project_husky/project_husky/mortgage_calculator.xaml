@@ -14,44 +14,29 @@
             <Rectangle HorizontalAlignment="Left" Height="113"  Fill="White"  VerticalAlignment="Top" Width="124" RenderTransformOrigin="0.452,0.514"  Margin="0,585,0,0"/>
             <Image HorizontalAlignment="Left" Height="100" Margin="18,598,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/mortgage_calculator_selected.png"/>
             <TextBlock HorizontalAlignment="Left" Margin="173,151,0,0" Text="Loan Amount" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="36"/>
-            <TextBlock HorizontalAlignment="Left" Margin="173,333,0,0" Text="Loan Fees" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="36"/>
-            <TextBlock HorizontalAlignment="Left" Margin="173,514,0,0" Text="Annual Interest (%)" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="36"/>
-            <TextBlock HorizontalAlignment="Left" Margin="173,699,0,0" Text="Number of Years" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="36"/>
+            <TextBlock HorizontalAlignment="Left" Margin="173,333,0,0" Text="Loan Principal" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="36"/>
+            <TextBlock HorizontalAlignment="Left" Margin="173,514,0,0" Text="Monthly Interest (%)" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="36"/>
+            <TextBlock HorizontalAlignment="Left" Margin="173,699,0,0" Text="Number of Payments" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="36"/>
             <TextBox x:Name="loan_amount_textbox" HorizontalAlignment="Left" Margin="173,221,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="464" FontSize="36" GotFocus="loan_amount_textbox_GotFocus"/>
-            <TextBox x:Name="loan_fees_textbox" HorizontalAlignment="Left" Margin="173,409,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="464" FontSize="36" GotFocus="loan_fees_textbox_GotFocus"/>
-            <TextBox x:Name="annual_interest_textbox" HorizontalAlignment="Left" Margin="173,580,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="464" FontSize="36" GotFocus="annual_interest_textbox_GotFocus"/>
-            <TextBox x:Name="number_of_years_textbox" HorizontalAlignment="Left" Margin="173,764,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="464" FontSize="36" GotFocus="number_of_years_textbox_GotFocus"/>
-            <Rectangle HorizontalAlignment="Left" Height="302" Margin="702,167,0,0" Fill="Black" VerticalAlignment="Top" Width="698"/>
-            <TextBlock x:Name="monthly_payment_label" HorizontalAlignment="Left" Margin="722,261,0,0" Text="$ null" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="36" Width="656" TextAlignment="Center"/>
-            <TextBlock HorizontalAlignment="Left" Margin="921,194,0,0" Text="Monthly Payment" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="36" Width="295"/>
-            <TextBlock HorizontalAlignment="Left" Margin="722,327,0,0" Text="Total Amount Paid" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="36"/>
-            <TextBlock x:Name="total_amount_label" HorizontalAlignment="Left" Margin="722,400,0,0" Text="$ null" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="36" Width="280" TextAlignment="Center"/>
-            <TextBlock HorizontalAlignment="Left" Margin="1158,327,0,0" Text="Interest Paid" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="36"/>
-            <TextBlock x:Name="interest_label" HorizontalAlignment="Left" Margin="1134,400,0,0" Text="$ null" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="36" Width="246" TextAlignment="Center"/>
-            <TextBlock HorizontalAlignment="Left" Margin="786,906,0,0" Text="2" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="36"/>
-            <TextBlock HorizontalAlignment="Left" Margin="885,906,0,0" Text="4" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="36"/>
-            <TextBlock HorizontalAlignment="Left" Margin="988,906,0,0" Text="6" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="36"/>
-            <TextBlock HorizontalAlignment="Left" Margin="1101,906,0,0" Text="8" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="36"/>
-            <TextBlock HorizontalAlignment="Left" Margin="1199,906,0,0" Text="10" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="36"/>
-            <TextBlock HorizontalAlignment="Left" Margin="1316,906,0,0" Text="12" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="36"/>
-            <Rectangle x:Name="second_year_black" HorizontalAlignment="Left" Height="35" Margin="763,871,0,0" Fill="Black" VerticalAlignment="Top" Width="23"/>
-            <Rectangle x:Name="fourth_year_black" HorizontalAlignment="Left" Height="35" Margin="865,871,0,0" Fill="Black" VerticalAlignment="Top" Width="23"/>
-            <Rectangle x:Name="sixth_year_black" HorizontalAlignment="Left" Height="35" Margin="968,871,0,0" Fill="Black" VerticalAlignment="Top" Width="23"/>
-            <Rectangle x:Name="eigth_year_black" HorizontalAlignment="Left" Height="35" Margin="1078,871,0,0" Fill="Black" VerticalAlignment="Top" Width="23"/>
-            <Rectangle x:Name="tenth_year_black" HorizontalAlignment="Left" Height="35" Margin="1189,871,0,0" Fill="Black" VerticalAlignment="Top" Width="23"/>
-            <Rectangle x:Name="twelth_year_black" HorizontalAlignment="Left" Height="35" Margin="1301,871,0,0" Fill="Black" VerticalAlignment="Top" Width="23"/>
-            <Rectangle x:Name="second_year_gray" HorizontalAlignment="Left" Height="35" Margin="807,871,0,0" Fill="Gray" VerticalAlignment="Top" Width="23"/>
-            <Rectangle x:Name="fourth_year_gray" HorizontalAlignment="Left" Height="35" Margin="909,871,0,0" Fill="Gray" VerticalAlignment="Top" Width="23"/>
-            <Rectangle x:Name="sixth_year_gray" HorizontalAlignment="Left" Height="35" Margin="1012,871,0,0" Fill="Gray" VerticalAlignment="Top" Width="23"/>
-            <Rectangle x:Name="eigth_year_gray" HorizontalAlignment="Left" Height="35" Margin="1122,871,0,0" Fill="Gray" VerticalAlignment="Top" Width="23"/>
-            <Rectangle x:Name="tenth_year_gray" HorizontalAlignment="Left" Height="35" Margin="1233,871,0,0" Fill="Gray" VerticalAlignment="Top" Width="23"/>
-            <Rectangle x:Name="twelth_year_gray" HorizontalAlignment="Left" Height="35" Margin="1345,871,0,0" Fill="Gray" VerticalAlignment="Top" Width="23"/>
+            <TextBox x:Name="loan_principal_textbox" HorizontalAlignment="Left" Margin="173,409,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="464" FontSize="36" GotFocus="loan_fees_textbox_GotFocus"/>
+            <TextBox x:Name="monthly_interest_textbox" HorizontalAlignment="Left" Margin="173,580,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="464" FontSize="36" GotFocus="annual_interest_textbox_GotFocus"/>
+            <TextBox x:Name="number_of_payments_textbox" HorizontalAlignment="Left" Margin="173,764,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="464" FontSize="36" GotFocus="number_of_years_textbox_GotFocus"/>
             <TextBlock HorizontalAlignment="Left" Margin="166,33,0,0" Text="Mortgage Calculator" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" FontSize="48" FontWeight="Bold"/>
             <Image x:Name="mortgage_calculator1" HorizontalAlignment="Left" Height="100" Margin="10,760,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/info_unselected.png" Tapped="mortgage_calculator_Tapped"/>
             <Image x:Name="stocks" HorizontalAlignment="Left" Height="100" Margin="21,269,0,0" VerticalAlignment="Top" Width="100" Source="/stocks_unselected.png" Tapped="stocks_Tapped"/>
             <Image x:Name="bitcoin" HorizontalAlignment="Left" Height="108" Margin="34,119,0,0" VerticalAlignment="Top" Width="96" Source="/Assets/bitcoin_unselected.png" Tapped="bitcoin_Tapped"/>
-            <Rectangle HorizontalAlignment="Left" Height="65" Margin="296,884,0,0" Fill="Black" VerticalAlignment="Top" Width="218"/>
-            <Button x:Name="calculate" Content="Calculate" Margin="296,884,0,0" VerticalAlignment="Top" Height="65" Width="218" FontSize="32" Tapped="calculate_Tapped"/>
+            <Rectangle HorizontalAlignment="Left" Height="65" Margin="175,884,0,0" Fill="Black" VerticalAlignment="Top" Width="218"/>
+            <Button x:Name="calculate" Content="Calculate" Margin="175,884,0,0" VerticalAlignment="Top" Height="65" Width="218" FontSize="32" Tapped="calculate_Tapped"/>
+            <Image HorizontalAlignment="Left" Height="392" Margin="707,170,0,0" VerticalAlignment="Top" Width="702" Source="/Assets/money_bills_dollar_stack_7767_1600x900.jpg"/>
+            <Rectangle HorizontalAlignment="Left" Height="387" Margin="707,562,0,0" Fill="Black" VerticalAlignment="Top" Width="697"/>
+            <TextBlock x:Name="monthly_payment_label" HorizontalAlignment="Left" Margin="729,627,0,0" Text="$ 0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="48" Width="656" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Margin="918,579,0,0" Text="Monthly Payment" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="36" Width="295"/>
+            <TextBlock HorizontalAlignment="Left" Margin="974,699,0,0" Text="Total Loan" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="36"/>
+            <TextBlock x:Name="loan_total_label" HorizontalAlignment="Left" Margin="729,741,0,0" Text="$ 0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="48" Width="660" TextAlignment="Center" FontWeight="Bold"/>
+            <TextBlock HorizontalAlignment="Left" Margin="955,821,0,0" Text="Total Interest" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="36"/>
+            <TextBlock x:Name="total_interest_label" HorizontalAlignment="Left" Margin="729,862,0,0" Text="$ 0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="48" Width="658" TextAlignment="Center" FontWeight="Bold"/>
+            <Rectangle HorizontalAlignment="Left" Height="65" Margin="419,884,0,0" Fill="Black" VerticalAlignment="Top" Width="218"/>
+            <Button x:Name="reset_button" Content="Reset" Margin="419,884,0,0" VerticalAlignment="Top" Height="65" Width="218" FontSize="32" Tapped="reset_button_Tapped"/>
 
         </Grid>
     </ScrollViewer>

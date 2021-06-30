@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -55,6 +56,41 @@ namespace project_husky
         private void bitcoin_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage));
+        }
+
+        private void web_home_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            webView1.Navigate(new Uri("https://www.tradingview.com/markets/stocks-usa/sectorandindustry-sector/"));
+        }
+
+        private void web_go_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            try
+            {
+                webView1.GoForward();
+            }
+            catch (Exception ex)
+            {
+                var dialog = new MessageDialog("You cannot go forward from this page since this is the last page.", "Navigation Error");
+                dialog.ShowAsync();
+            }
+        }
+
+        private void web_back_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            try
+            {
+                webView1.GoBack();
+            }
+            catch (Exception ex)
+            {
+                var dialog = new MessageDialog("You cannot go back from this page since this is the first page.", "Navigation Error");
+                dialog.ShowAsync();
+            }
+        }
+        private void web_refresh_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            webView1.Refresh();
         }
     }
 }

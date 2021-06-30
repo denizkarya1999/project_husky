@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -62,5 +63,10 @@ namespace project_husky
             Windows.ApplicationModel.Email.EmailManager.ShowComposeNewEmailAsync(emailMessage);
         }
 
+        private void rate_us_button_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            var dialog = new MessageDialog("This part of this application is under construction. When we release the next build, you will be able to use this part of the application.","Under Construction");
+            dialog.ShowAsync();
+        }
     }
 }

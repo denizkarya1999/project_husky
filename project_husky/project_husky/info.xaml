@@ -38,7 +38,7 @@
             <TextBlock HorizontalAlignment="Left" Margin="861,523,0,0" Text="Phone" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="26" FontWeight="Bold"/>
             <TextBlock HorizontalAlignment="Left" Margin="861,623,0,0" Text="Community Server" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontSize="26" FontWeight="Bold"/>
             <HyperlinkButton Content="Developers Without Limits Discord Server" Margin="861,661,0,0" VerticalAlignment="Top" FontSize="26" Foreground="White" NavigateUri="https://discord.gg/2NYKwNVc"/>
-            <Button Content="Rate Us" Margin="883,776,0,0" VerticalAlignment="Top" Height="80" Width="238" Foreground="Black" Background="#33000000" FontSize="26"/>
+            <Button x:Name="rate_us_button" Content="Rate Us" Margin="883,776,0,0" VerticalAlignment="Top" Height="80" Width="238" Foreground="Black" Background="#33000000" FontSize="26" Tapped="rate_us_button_Tapped"/>
             <Button Content="Apply Studio" Margin="1170,776,0,0" VerticalAlignment="Top" Height="80" Width="238" Foreground="Black" Background="#33000000" FontSize="26" Click="Button_Click"/>
             <Image x:Name="stocks" HorizontalAlignment="Left" Height="100" Margin="21,269,0,0" VerticalAlignment="Top" Width="100" Source="/stocks_unselected.png" Tapped="stocks_Tapped"/>
             <Image x:Name="bitcoin" HorizontalAlignment="Left" Height="108" Margin="34,119,0,0" VerticalAlignment="Top" Width="96" Source="/Assets/bitcoin_unselected.png" Tapped="bitcoin_Tapped"/>

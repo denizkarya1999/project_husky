@@ -170,6 +170,8 @@
     <Content Include="Assets\LargeTile.scale-150.png" />
     <Content Include="Assets\LargeTile.scale-200.png" />
     <Content Include="Assets\LargeTile.scale-400.png" />
+    <Content Include="Assets\money_bills_dollar_stack_7767_1600x900.jpg" />
+    <Content Include="Assets\Money_Cash.jpg" />
     <Content Include="Assets\mortgage_calculator_selected.png" />
     <Content Include="Assets\mortgage_calculator_unselected.png" />
     <Content Include="Assets\project_husky_splash.scale-100.png" />
@@ -215,6 +217,7 @@
     <Content Include="Assets\Wide310x150Logo.scale-125.png" />
     <Content Include="Assets\Wide310x150Logo.scale-150.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="money_wallpaper.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
